@@ -3,7 +3,6 @@ from discord.ext import commands
 import os
 
 client = commands.Bot(command_prefix="")#Bot's Prefix
-token = os.getenv("")#Bot's Token
 
 
 @client.event
@@ -58,4 +57,5 @@ async def member_count(ctx):
 
 client.run('')#Bot's Token
 
-#Doing on replit Hide your token by doing this token = os.getenv("") and save your token in secret env
+
+#Doing on replit Hide your token by doing this token = os.getenv("") and save your token in secret env bot.run(os.getenv('TOKEN'))
